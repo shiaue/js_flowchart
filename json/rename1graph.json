@@ -1,0 +1,219 @@
+{
+  "cells": [
+    {
+      "type": "uml.StartState",
+      "size": {
+        "width": 30,
+        "height": 30
+      },
+      "position": {
+        "x": 20,
+        "y": 20
+      },
+      "angle": 0,
+      "id": "635b4f09-82cf-41c4-a7a5-a70b15db55fa",
+      "z": 1,
+      "attrs": {}
+    },
+    {
+      "type": "uml.State",
+      "name": "state 1",
+      "events": [
+        "entry / init()",
+        "exit / destroy()"
+      ],
+      "position": {
+        "x": 333,
+        "y": 42
+      },
+      "size": {
+        "width": 200,
+        "height": 100
+      },
+      "angle": 0,
+      "id": "b8f79252-67cd-4484-b731-e04a8d29df7f",
+      "z": 2,
+      "attrs": {
+        ".uml-state-separator": {
+          "d": "M 0 20 L 200 20"
+        },
+        ".uml-state-name": {
+          "text": "state 1"
+        },
+        ".uml-state-events": {
+          "text": "entry / init()\nexit / destroy()"
+        }
+      }
+    },
+    {
+      "type": "uml.State",
+      "name": "state 2",
+      "events": [
+        "entry / create()",
+        "exit / kill()",
+        "A / foo()",
+        "B / bar()"
+      ],
+      "position": {
+        "x": 738,
+        "y": 48
+      },
+      "size": {
+        "width": 300,
+        "height": 300
+      },
+      "angle": 0,
+      "id": "650c83a0-0d1c-4639-a1f7-b7e15cc99c48",
+      "z": 3,
+      "embeds": [
+        "5f7ab8e7-e424-4fc5-b701-b98d216a611b"
+      ],
+      "attrs": {
+        ".uml-state-separator": {
+          "d": "M 0 20 L 300 20"
+        },
+        ".uml-state-name": {
+          "text": "state 2"
+        },
+        ".uml-state-events": {
+          "text": "entry / create()\nexit / kill()\nA / foo()\nB / bar()"
+        }
+      }
+    },
+    {
+      "type": "uml.State",
+      "name": "state 3",
+      "events": [
+        "entry / create()",
+        "exit / kill()"
+      ],
+      "position": {
+        "x": 130,
+        "y": 400
+      },
+      "size": {
+        "width": 160,
+        "height": 60
+      },
+      "angle": 0,
+      "id": "1355bebc-f0ad-45ac-a544-33b6967d7fee",
+      "z": 4,
+      "attrs": {
+        ".uml-state-separator": {
+          "d": "M 0 20 L 160 20"
+        },
+        ".uml-state-name": {
+          "text": "state 3"
+        },
+        ".uml-state-events": {
+          "text": "entry / create()\nexit / kill()"
+        }
+      }
+    },
+    {
+      "type": "uml.State",
+      "name": "sub state 4",
+      "events": [
+        "entry / create()"
+      ],
+      "position": {
+        "x": 422,
+        "y": 343
+      },
+      "size": {
+        "width": 160,
+        "height": 50
+      },
+      "angle": 0,
+      "id": "5f7ab8e7-e424-4fc5-b701-b98d216a611b",
+      "z": 5,
+      "parent": "650c83a0-0d1c-4639-a1f7-b7e15cc99c48",
+      "attrs": {
+        ".uml-state-separator": {
+          "d": "M 0 20 L 160 20"
+        },
+        ".uml-state-name": {
+          "text": "sub state 4"
+        },
+        ".uml-state-events": {
+          "text": "entry / create()"
+        }
+      }
+    },
+    {
+      "type": "uml.EndState",
+      "size": {
+        "width": 30,
+        "height": 30
+      },
+      "position": {
+        "x": 677,
+        "y": 433
+      },
+      "angle": 0,
+      "id": "6c007613-05ea-4d5c-a8ef-c1b99e4181bf",
+      "z": 6,
+      "attrs": {}
+    },
+    {
+      "type": "uml.Transition",
+      "source": {
+        "id": "635b4f09-82cf-41c4-a7a5-a70b15db55fa"
+      },
+      "target": {
+        "id": "b8f79252-67cd-4484-b731-e04a8d29df7f"
+      },
+      "id": "6d67468a-d745-4ce5-a750-d7b5c941967d",
+      "z": 7,
+      "attrs": {}
+    },
+    {
+      "type": "uml.Transition",
+      "source": {
+        "id": "b8f79252-67cd-4484-b731-e04a8d29df7f"
+      },
+      "target": {
+        "id": "650c83a0-0d1c-4639-a1f7-b7e15cc99c48"
+      },
+      "id": "77c5410d-4223-4b43-ae98-63e6dcc26ccc",
+      "z": 8,
+      "attrs": {}
+    },
+    {
+      "type": "uml.Transition",
+      "source": {
+        "id": "b8f79252-67cd-4484-b731-e04a8d29df7f"
+      },
+      "target": {
+        "id": "1355bebc-f0ad-45ac-a544-33b6967d7fee"
+      },
+      "id": "bd31ad54-d9b2-4e16-b158-84c3c3a5eb28",
+      "z": 9,
+      "attrs": {}
+    },
+    {
+      "type": "uml.Transition",
+      "source": {
+        "id": "1355bebc-f0ad-45ac-a544-33b6967d7fee"
+      },
+      "target": {
+        "id": "5f7ab8e7-e424-4fc5-b701-b98d216a611b"
+      },
+      "id": "703e3d91-ec56-4f00-a2e2-25c9c8dcd35b",
+      "z": 10,
+      "attrs": {}
+    },
+    {
+      "type": "uml.Transition",
+      "source": {
+        "id": "650c83a0-0d1c-4639-a1f7-b7e15cc99c48"
+      },
+      "target": {
+        "id": "6c007613-05ea-4d5c-a8ef-c1b99e4181bf"
+      },
+      "id": "229eb1e1-dd51-46c8-9b11-74388040aa4c",
+      "z": 11,
+      "attrs": {}
+    }
+  ]
+}

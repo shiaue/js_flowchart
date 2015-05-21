@@ -1,0 +1,98 @@
+{
+  "cells": [
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 366,
+        "y": 322
+      },
+      "size": {
+        "width": 170,
+        "height": 100
+      },
+      "angle": 0,
+      "label": "Process 1",
+      "select": "Manufacturing Process",
+      "id": "85db6cf8-78e2-4ac5-88b1-5000fe0cd5a1",
+      "z": 1,
+      "input": "Begin Build",
+      "attrs": {}
+    },
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 770,
+        "y": 86
+      },
+      "size": {
+        "width": 170,
+        "height": 100
+      },
+      "angle": 0,
+      "label": "A",
+      "select": "Design Process",
+      "id": "2b319787-3677-4c62-816c-8d09db281f3d",
+      "z": 2,
+      "input": "Process A",
+      "attrs": {}
+    },
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 461,
+        "y": 119
+      },
+      "size": {
+        "width": 170,
+        "height": 100
+      },
+      "angle": 0,
+      "label": "B",
+      "select": "Design Process",
+      "id": "2a79124a-1c34-4774-84ec-729afc0b07e2",
+      "z": 3,
+      "input": "Process B",
+      "attrs": {}
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "2b319787-3677-4c62-816c-8d09db281f3d"
+      },
+      "target": {
+        "id": "2a79124a-1c34-4774-84ec-729afc0b07e2"
+      },
+      "id": "1fd2d4f3-ab64-48e7-b67d-e859a45be84e",
+      "z": 4,
+      "attrs": {
+        ".marker-source": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".connection": {
+          "stroke-width": 3,
+          "stroke": "#000000"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "85db6cf8-78e2-4ac5-88b1-5000fe0cd5a1"
+      },
+      "target": {
+        "id": "2a79124a-1c34-4774-84ec-729afc0b07e2"
+      },
+      "id": "1f06cb5f-5383-4f60-a104-e81cb0c25b5f",
+      "z": 5,
+      "attrs": {
+        ".marker-source": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".connection": {
+          "stroke-width": 3,
+          "stroke": "#000000"
+        }
+      }
+    }
+  ]
+}

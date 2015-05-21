@@ -1,0 +1,75 @@
+{
+  "cells": [
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 10,
+        "y": 150
+      },
+      "size": {
+        "width": 170,
+        "height": 100
+      },
+      "angle": 0,
+      "label": "Process 1",
+      "select": "one",
+      "id": "f930749b-8f96-42d4-b401-b4073e12fb69",
+      "z": 1,
+      "attrs": {}
+    },
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 580,
+        "y": 80
+      },
+      "size": {
+        "width": 170,
+        "height": 100
+      },
+      "angle": 0,
+      "label": "A",
+      "select": "Process",
+      "id": "06892a4c-9529-4e2a-8374-1563eff24208",
+      "z": 2,
+      "attrs": {}
+    },
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 370,
+        "y": 160
+      },
+      "size": {
+        "width": 170,
+        "height": 100
+      },
+      "angle": 0,
+      "label": "B",
+      "select": "Process",
+      "id": "90d9c181-fedb-42d6-a573-d64052e692f9",
+      "z": 3,
+      "attrs": {}
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "06892a4c-9529-4e2a-8374-1563eff24208"
+      },
+      "target": {
+        "id": "90d9c181-fedb-42d6-a573-d64052e692f9"
+      },
+      "id": "c20fe42e-3df3-447b-925b-14ad15ef33e9",
+      "z": 4,
+      "attrs": {
+        ".marker-source": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".connection": {
+          "stroke-width": 3,
+          "stroke": "#000000"
+        }
+      }
+    }
+  ]
+}

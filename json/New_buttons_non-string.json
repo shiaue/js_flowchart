@@ -1,0 +1,101 @@
+{
+  "cells": [
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 227,
+        "y": 468
+      },
+      "size": {
+        "width": 200,
+        "height": 110
+      },
+      "angle": 0,
+      "label": "Process 1",
+      "select": "Manufacturing Process",
+      "id": "564f62a2-21b9-4786-a092-2a919d8aa4ae",
+      "z": 1,
+      "attrs": {}
+    },
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 580,
+        "y": 80
+      },
+      "size": {
+        "width": 200,
+        "height": 110
+      },
+      "angle": 0,
+      "label": "A",
+      "select": "Design Process",
+      "id": "42c3529c-8cf0-459e-8c36-948be411caea",
+      "z": 2,
+      "attrs": {}
+    },
+    {
+      "type": "html.Element",
+      "position": {
+        "x": 340,
+        "y": 270
+      },
+      "size": {
+        "width": 200,
+        "height": 110
+      },
+      "angle": 0,
+      "label": "B",
+      "select": "Manufacturing Process",
+      "id": "0864c23c-163b-409b-ae3c-ce9ffc63f191",
+      "z": 3,
+      "attrs": {}
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "42c3529c-8cf0-459e-8c36-948be411caea"
+      },
+      "target": {
+        "id": "0864c23c-163b-409b-ae3c-ce9ffc63f191"
+      },
+      "connector": {
+        "name": "smooth"
+      },
+      "id": "e3ce3e8a-499e-49fb-9ede-0a59210a1344",
+      "z": 4,
+      "attrs": {
+        ".marker-source": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".connection": {
+          "stroke-width": 3,
+          "stroke": "#000000"
+        }
+      }
+    },
+    {
+      "type": "link",
+      "source": {
+        "id": "564f62a2-21b9-4786-a092-2a919d8aa4ae"
+      },
+      "target": {
+        "id": "0864c23c-163b-409b-ae3c-ce9ffc63f191"
+      },
+      "connector": {
+        "name": "smooth"
+      },
+      "id": "6ca83ff9-c6c5-4f42-8dc3-ab91c3f3be93",
+      "z": 5,
+      "attrs": {
+        ".marker-source": {
+          "d": "M 10 0 L 0 5 L 10 10 z"
+        },
+        ".connection": {
+          "stroke-width": 3,
+          "stroke": "#000000"
+        }
+      }
+    }
+  ]
+}
